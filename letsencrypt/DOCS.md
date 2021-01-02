@@ -89,6 +89,20 @@ transip_username: ''
 transip_api_key: ''
 ```
 
+### Configure web interface to use HTTPS
+
+Add the following to configuration.yaml:
+
+```yaml
+http:
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+```
+
+Further reading:
+  - [advanced configuration documentation](https://www.home-assistant.io/getting-started/configuration/)
+  - [http integration documentation](https://www.home-assistant.io/integrations/http/)
+
 ## Advanced
 
 ### Changing the ACME Server
